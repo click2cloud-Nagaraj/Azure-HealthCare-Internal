@@ -1553,7 +1553,6 @@ foreach($zip in $zips)
 				-replace '#TENANT_ID#', $tenantId`				
         } | Set-Content -Path demohealthcare_web_app/appsettings.json
 (Get-Content -path demohealthcare_web_app/wwwroot/config.js -Raw) | Foreach-Object { $_ `
-                -replace '#STORAGE_ACCOUNT#', $dataLakeAccountName`
 				-replace '#SERVER_NAME#', $healthcare_poc_app_service_name`			
         } | Set-Content -Path demohealthcare_web_app/wwwroot/config.js	
 
