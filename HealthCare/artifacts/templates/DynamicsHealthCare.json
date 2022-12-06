@@ -1,0 +1,19 @@
+{
+    "name": "DynamicsHealthCare",
+    "type": "Microsoft.Synapse/workspaces/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "Dynamics",
+        "typeProperties": {
+            "deploymentType": "Online",
+            "serviceUri": "https://healthcareapp.crm.dynamics.com/",
+            "authenticationType": "Office365",
+            "username": "",
+            "encryptedCredential": ""
+        },
+        "connectVia": {
+            "referenceName": "AutoResolveIntegrationRuntime",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
